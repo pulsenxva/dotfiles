@@ -1,4 +1,4 @@
-PROMPT="%F{green}➜%f %F{blue}[%~]%f "
+F{blue}[%~]%f "
 HISTSIZE=50000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
@@ -16,3 +16,6 @@ bindkey "^[[1;5D" backward-word
 bindkey '^H' backward-kill-word
 bindkey "^[[3~" delete-char      
 bindkey "^[3;5~" delete-char     
+alias cpc='g++ -fsanitize=undefined -g -std=c++17 -o a'
+alias cpd='g++ -fsanitize=undefined -fsanitize=address -g -std=c++17 -o a'
+alias cpw='g++ -Wall -Wextra -Wshadow -Wconversion -std=c++17 -o a'
