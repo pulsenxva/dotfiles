@@ -13,7 +13,6 @@
 
   "modules-right": [
     "hyprland/language",
-    "custom/weather",
     "pulseaudio",
     "battery",
     "clock",
@@ -22,29 +21,22 @@
 
   "hyprland/workspaces": {
     "format": "{icon}",
+    "sort-by-number": true,
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
-      "14": "",
-      "15": "",
-      "16": "",
-      "17": "",
-      "18": "",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "1",
+      "7": "2",
+      "8": "3",
+      "9": "4",
+      "10": "5",
       "magic": ""
     },
     "persistent-workspaces": {
-      "*": 9
+      "*": 5
     },
     "show-special": true,
     "special-visible-only": true
@@ -53,23 +45,17 @@
   "hyprland/language": {
     "format-en": "🇺🇸",
     "format-ru": "🇷🇺",
-    "min-length": 5
-  },
-
-  "custom/weather": {
-    "class": "weather",
-    "exec": "curl -s 'wttr.in/Tashkent?format=%c%t'",
-    "format": " {} ",
-    "interval": 300
+    "min-length": 0
   },
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
+    "format-muted": "<span color='#cc241d'>0%</span>",
     "format-bluetooth": "{icon} {volume}% ",
     "format-icons": {
       "default": [
-        "",
-        ""
+        "",
+        ""
       ],
       "car": "",
       "handsfree": "",
@@ -78,8 +64,8 @@
       "phone": "",
       "portable": ""
     },
-    "format-muted": "",
-    "on-click": "pavucontrol"
+    "format-muted": "0%",
+    "on-click": "blueman-manager"
   },
 
   "battery": {
