@@ -35,6 +35,16 @@ window#waybar {
   padding: 0 10px;
 }
 
+#pulseaudio {
+    color: #ebdbb2;
+    padding: 0 10px;
+}
+
+#pulseaudio.muted {
+    color: #cc241d;
+}
+
+/*
 #language {
   color: #d79921;
   border-bottom: 5px solid #d79921;
@@ -70,3 +80,4 @@ window#waybar {
   color: #d65d0e;
   border-bottom: 5px solid #d65d0e;
 }
+*/
