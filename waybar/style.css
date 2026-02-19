@@ -5,13 +5,13 @@
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
-  color: #ebdbb2;
+  color: #cdd6f4; /* Text */
   margin: 0;
   padding: 0;
 }
 
 window#waybar {
-  background: #1d2021;
+  background: #1e1e2e; /* Base */
 }
 
 /* Workspace Buttons */
@@ -19,65 +19,68 @@ window#waybar {
   padding: 0 20px;
 }
 
-#workspaces button.active label {
-  color: #1d2021;
+#workspaces button {
+  background: transparent;
+  color: #a6adc8; /* Subtext0 */
 }
 
 #workspaces button:hover {
-  background: #3c3836;
+  background: #313244; /* Surface0 */
 }
 
 #workspaces button.active {
-  background: #d65d0e;
+  background: #89b4fa;
 }
-
-#clock, #battery, #pulseaudio, #tray, #language, #weather {
-  padding: 0 10px;
-}
-
-#pulseaudio {
-    color: #ebdbb2;
-    padding: 0 10px;
-}
-
-#pulseaudio.muted {
-    color: #cc241d;
-}
-
 /*
-#language {
-  color: #d79921;
-  border-bottom: 5px solid #d79921;
+#workspaces button.active label {
+  color: #1e1e2e;
+}
+*/
+
+#workspaces button.active label {
+  color: #1e1e2e; /* Base */
 }
 
-#custom-weather {
-  color: #98971a;
-  border-bottom: 5px solid #98971a
+#clock, 
+#battery, 
+#pulseaudio, 
+#tray, 
+#language {
+  padding: 0 12px;
+  color: #cdd6f4; /* Text */
+}
+
+/* Module accents */
+
+#language {
+  color: #89b4fa; /* Blue */
 }
 
 #pulseaudio {
-  color: #689d6a;
-  border-bottom: 5px solid #689d6a;
+  color: #a6e3a1; /* Green */
 }
 
 #pulseaudio.muted {
-  padding: 0 20px;
-  color: #cc241d;
-  border-bottom: 5px solid #cc241d;
+  color: #f38ba8; /* Pink */
 }
 
 #battery {
-  color: #458588;
-  border-bottom: 5px solid #458588;
+  color: #f9e2af; /* Yellow */
+}
+
+#battery.warning {
+  color: #fab387; /* Peach */
+}
+
+#battery.critical {
+  color: #f38ba8; /* Pink */
 }
 
 #clock {
-  color: #b16286;
-  border-bottom: 5px solid #b16286;
+  color: #94e2d5; /* Teal */
 }
 
 #tray {
-  color: #d65d0e;
-  border-bottom: 5px solid #d65d0e;
+  color: #bac2de; /* Subtext1 */
 }
-*/
+
