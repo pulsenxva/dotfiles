@@ -1,16 +1,19 @@
 window {
-  background-color: #272727;
+  background-color: #1a1b26;
 }
+
 * {
   font-family: "Jetbrains Mono";
   color: #fff;
 }
+
 #scroll {
   padding: 0.5rem;
 }
+
 #input {
-  background-color: #272727;
-  color: #ffffff;
+  background-color: #1a1b26;
+  color: #c0caf5;
   outline: none;
   box-shadow: none;
   border: 0;
@@ -18,20 +21,26 @@ window {
   font-size: 1rem;
   padding: 0.5rem;
 }
+
 #inner-box {
   margin: 0.5rem;
   font-size: 1rem;
 }
+
 #img {
   margin: 10px 10px;
 }
+
 #entry {
   border-radius: 0.5rem;
 }
+
 #entry:selected {
-  background-color: #424242;
+  background-color: #c0caf5;
   outline: none;
 }
+
 #text:selected {
-  color: #ffffff;
+  color: #1a1b26;
 }
+
