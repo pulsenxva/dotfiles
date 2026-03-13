@@ -9,10 +9,13 @@
         "return-type": "json",
         "format": "{}",
         "rewrite": {
-            "": "~"
+            "": "Hyprland"
         }
     },
-
+    "tray": {
+        "show-passive-items": true,
+        "spacing": 10
+    },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -92,9 +95,8 @@
         "bat": "BAT2"
     },
     "clock": {
-        "format": "{:%H:%M | %e %B} ",
+        "format": "{:%H:%M}",
+        "format-alt": " {:L%a %d %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    }
-
+    },
 }
