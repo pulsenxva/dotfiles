@@ -9,7 +9,6 @@ window#waybar {
     color: #c0caf5;
 }
 
-/* убираем контейнерные блоки */
 .modules-left,
 .modules-center,
 .modules-right {
@@ -18,7 +17,6 @@ window#waybar {
     padding: 0;
 }
 
-/* делаем всё плотным */
 #clock,
 #battery,
 #cpu,
@@ -32,18 +30,17 @@ window#waybar {
     border-radius: 0;
 }
 
-/* убираем hover-анимации */
 #clock:hover,
 #battery:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
 #network:hover,
+#workspaces:hover,
 #pulseaudio:hover {
     color: #c0caf5;
 }
 
-/* workspace — максимально простой */
 #workspaces button {
     background: transparent;
     font-size: 12px;
@@ -52,13 +49,15 @@ window#waybar {
     padding: 0 5px;
 }
 
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #c0caf5;
+}
+
 #workspaces button.active {
     color: #ffffff;
 }
 
-#workspaces button:hover {
-    background: transparent;
-}
 #clock {
-    padding: 0 12px 0 6px; /* справа больше */
-}
+    padding: 0 12px 0 6px; }
