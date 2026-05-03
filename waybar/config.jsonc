@@ -12,10 +12,10 @@
     "modules-center": [],
     "modules-right": [
         "pulseaudio",
+        "hyprland/language",
         "network",
         "cpu",
         "temperature",
-        "hyprland/language",
         "battery",
         "battery#bat2",
         "clock"
