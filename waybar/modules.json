@@ -5,6 +5,12 @@
         "warp-on-scroll": false,
         "format": "{name}",
     },  
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "": "Hyprland"
+        }
+    },
     "pulseaudio": {
         "format": "VOL {volume}% |",
         "format-muted": "VOL mute |",
@@ -29,8 +35,8 @@
     },
 
     "hyprland/language": {
-        "format": "{short} |",
-        "format-en": "EN",
+        "format": "{}  |",
+        "format-en": "US",
         "format-ru": "RU"
     },
 
